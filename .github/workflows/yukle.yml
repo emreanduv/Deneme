@@ -17,4 +17,4 @@ jobs:
           META_APP_SECRET: ${{ secrets.META_APP_SECRET }}
         run: |
           test -n "$META_APP_SECRET" || { echo "META_APP_SECRET yok"; exit 1; }
-          ./ovr-platform-util upload-quest-build --age-group TEENS_AND_ADULTS --app-id 1485413637982573 --app-secret "$META_APP_SECRET" --apk m.apk --channel ALPHA --notes "1.5.0 (1): Harp Masasi VR ilk surum" --disable-progress-bar
+          ./ovr-platform-util upload-quest-build --age-group TEENS_AND_ADULTS --app-id 1485413637982573 --app-secret "$META_APP_SECRET" --apk m.apk --channel store --draft --notes "1.5.0 (2): Harp Masasi VR, menuler, atli sipahiler" --disable-progress-bar
